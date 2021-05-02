@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./one.js"></script>
+    <title>Document</title>
+    <style>
+        body{background-color:  rgb(175, 166, 166);}
+        #tablee{border: 2px solid rgb(13, 13, 14);
+            margin-top: 0px;
+            width:fit-content;}
+         .content{border-collapse: collapse;
+          margin: 5px 0;
+          font-size: 0.9em;
+          min-width: 400px;
+          border-radius: 5px 5px 0 0;
+          overflow: hidden;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);}
+        #inp {margin-left: 500px;
+              border: 2px solid rgb(13, 13, 14);
+              width:fit-content;height:fit-content;
+        }
+       #inp form{overflow: hidden;}
+       .button{margin-left: 10px;}
+       .resetbtn{float: right;margin-right: 10px;}
+      </style>
+</head>
+<body>
+    <div id="tablee">
+        <table class="content">
+            <tr>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Age</th>
+              <th>City</th>
+              <th>Action</th>
+              </tr>
+              <tr>
+                  <td>ahmad</td>
+                  <td>hgg</td>
+                  <td>34</td>
+                  <td>fdf</td>
+                  <td>rrgr</td>
+              </tr>           
+          </table>
+        </div>
+        <div id="inp">
+        <form id=first_form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="NAME"><br><br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" class="male" value="male">
+            <label for="Male">Male</label><br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" class="male" value="female">
+            <label for="female">Female</label><br><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" placeholder="Age" value="10" max="999" min="1"><br><br>
+            <label for="city">Choose a city:</label>
+            <select name="city" id="city" placeholder="Select CIty"> 
+            <option value="lahore">lahore</option>
+            <option value="karachi">karachi</option>
+            <option value="multan">Multan</option>
+            <option value="islamabad">Islamabad</option>         
+        </select>
+        <br><br>
+            <input type="submit" onclick="" value="submit" button class="button">
+            <input type="reset" onclick="" value="reset" button class="resetbtn">          
+        </form>
+    </div>
+</body>
+</html>
