@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   $("#fname").keypress(function(key) {
     if(key.charCode < 67 || key.charCode > 122) return false;
-    if($("#fname").val.length >10) return false;
+    if($("#fname").val().length >10) return false;
 });
     $("#first_form").submit(feedtable);
         function feedtable(e){
